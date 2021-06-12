@@ -1,0 +1,147 @@
+body,
+html {
+  background: #1100a8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #0202f7,
+    #1f151f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #1900ff,
+    #1c2421
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: Verdana, Arial, Tahoma, Serif;
+  cursor: default;
+  padding: 0;
+  margin: 0;
+}
+
+.removeall {
+  float: right;
+  font-size: 0.4em;
+  margin-right: 0%;
+  line-height: 30px;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+.add {
+  float: right;
+  cursor: pointer;
+}
+
+#container {
+  background: #ffbe0b;
+  width: 80vw;
+  max-width: 580px;
+  margin: 100px auto;
+  box-shadow: 1px 1px 5px black;
+  margin-bottom: 140px;
+}
+
+h1 {
+  background: #ffbe0b;
+  color: black;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: #720026;
+  max-height: 400px;
+  line-height: 40px;
+  color: lightgray;
+}
+
+li:nth-child(2n) {
+  background: #ee8441;
+  color: black;
+}
+
+input {
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  background: #4f000b;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  padding: 13px 13px 13px 20px;
+  color: white;
+}
+
+input:focus {
+  background: #78290f;
+  outline: none;
+  border: 2px solid #772e25;
+  color: white;
+}
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+span {
+  background: #000;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: lightgray;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: lightgray;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: lightgray;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: lightgray;
+}
+footer {
+  background-color: #ffbe0b;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+}
+footer .fa-heart {
+  color: #bb0820;
+}
+@media (max-width: 600px) {
+  #container {
+    margin: 130px auto;
+    margin-bottom: 200px;
+  }
+}
